@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --vermelho: #ff0000;
+    --amarelo: #FFEA00;
+    --font-title: "Chau Philomene One", sans-serif;
+}
