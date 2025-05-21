@@ -10,3 +10,27 @@
     --amarelo: #FFEA00;
     --font-title: "Chau Philomene One", sans-serif;
 }
+
+.interface{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+/* ESTILO DO HEADER(MENU) */
+
+/* ESTILO DO INÍCIO */
+
+/* ESTILO DO SOBRE */
+
+/* ESTILO DO PROJETOS */
+
+/* ESTILO DO CIÊNCIA FORENSE */
+
+/* ESTILO DO EXPERIMENTOS */
+
+/* ESTILO DO FOOTER(RODAPÉ) */
