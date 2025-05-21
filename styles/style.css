@@ -12,7 +12,7 @@
 }
 
 .interface{
-    max-width: 1000px;
+    max-width: 1450px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -21,7 +21,34 @@ html{
     scroll-behavior: smooth;
 } 
 
+body{
+    background-color: #000;
+}
+
 /* ESTILO DO HEADER(MENU) */
+header .interface{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .interface img{
+    width: 150px;
+    height: auto;
+}
+
+header .interface nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+header .interface nav ul li{
+    color: #fff;
+    list-style-type: none;
+}
+
+
 
 /* ESTILO DO INÍCIO */
 
