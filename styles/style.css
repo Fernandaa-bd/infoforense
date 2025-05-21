@@ -23,6 +23,7 @@ html{
 
 body{
     background-color: #000;
+    width: 100vw;
 }
 
 /* ESTILO DO HEADER(MENU) */
@@ -59,5 +60,11 @@ header .interface nav ul li{
 /* ESTILO DO CIÊNCIA FORENSE */
 
 /* ESTILO DO EXPERIMENTOS */
+section.experimentos{
+    background-color: #fff;
+}
 
+section.experimentos img.fita-zebrada{
+    width: 100vw;
+}
 /* ESTILO DO FOOTER(RODAPÉ) */
