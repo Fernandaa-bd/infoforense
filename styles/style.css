@@ -8,7 +8,8 @@
 :root{
     --vermelho: #ff0000;
     --amarelo: #FFEA00;
-    --font-title: "Chau Philomene One", sans-serif;
+    --font-titulo: "Chau Philomene One", sans-serif;
+    --sombra: 1px 1px 20px #0000003f;
 }
 
 .interface{
@@ -67,4 +68,58 @@ section.experimentos{
 section.experimentos img.fita-zebrada{
     width: 100vw;
 }
+
+section.experimentos .interface h1{
+    font-family: var(--font-titulo);
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+section.experimentos .interface .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.experimentos .interface .content p{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+section.experimentos .interface .content .cards{
+    display: flex;
+    gap: 35px;
+    margin: 35px 0;
+}
+
+section.experimentos .interface .content .cards .card{
+    background-color: var(--amarelo);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+section.experimentos .interface .content .cards .card img{
+    width: 250px;
+}
+
+section.experimentos .interface .content .cards .card button{
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-titulo);
+    font-size: 20px;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+section.experimentos .interface .content .cards .card button:hover{
+    border-radius: 2px;
+    box-shadow: var(--sombra);
+}
+
 /* ESTILO DO FOOTER(RODAPÉ) */
