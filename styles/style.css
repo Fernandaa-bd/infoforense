@@ -129,6 +129,10 @@ section.experimentos .interface .content .cards .card{
     text-align: center;
 }
 
+section.experimentos .interface .content .cards .card p{
+    display: none;
+}
+
 section.experimentos .interface .content .cards .card img{
     width: 250px;
 }
