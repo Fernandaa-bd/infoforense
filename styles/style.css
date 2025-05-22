@@ -40,6 +40,11 @@ header .interface img{
     height: auto;
 }
 
+header .interface nav{
+    display: flex;
+    align-items: center;
+}
+
 header .interface nav ul{
     display: flex;
     gap: 40px;
@@ -50,10 +55,33 @@ header .interface nav ul li{
     list-style-type: none;
 }
 
+header .interface nav ul a{
+    transition: .5s;
+    text-decoration: none;
+}
 
+header .interface nav ul a:hover{
+    transform: scale(1.05);
+}
 
 /* ESTILO DO INÍCIO */
 
+section.inicio .interface{
+    display: flex;
+}
+
+section.inicio .interface .img{
+    width: 50%;
+}
+
+section.inicio .interface .img img{
+    width: 350px;
+}
+
+section.inicio .interface .txt{
+    color: #fff;
+    text-align: right;
+}
 /* ESTILO DO SOBRE */
 
 /* ESTILO DO PROJETOS */
