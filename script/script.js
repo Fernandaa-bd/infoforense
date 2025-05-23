@@ -1,30 +1,22 @@
-function VerMais(){
-    var plus_1 = document.getElementById('plus_1')
-    var plus_2 = document.getElementById('plus_2')
-    var plus_3 = document.getElementById('plus_3')
-    var btn_ver = document.getElementById('ver_mais')
+function VerMais(titulo, texto){
+    var modal = document.getElementById('modal');
+    var modalTitle = document.getElementById('modal-title');
+    var modaltText = document.getElementById('modal-text');
+    var modalimg = document.getElementById('modal-img');
 
-    if(window.getComputedStyle(plus_1).display === 'none'){
-        plus_1.style.display = 'block'
-        btn_ver.innerHTML = 'Ver menos'
-    } else{
-        plus_1.style.display = 'none'
-        btn_ver.innerHTML = 'Ver mais'
-    }
+    modalTitle.innerHTML = titulo;
+    modaltText.innerHTML = texto;
+    modal.classList.remove('hidden');
 
-    if(window.getComputedStyle(plus_2).display === 'none'){
-        plus_2.style.display = 'block'
-        btn_ver.innerHTML = 'Ver menos'
-    } else{
-        plus_2.style.display = 'none'
-        btn_ver.innerHTML = 'Ver mais'
+    if(modalTitle.innerHTML == 'Técnica do Pó'){
+        modalimg.src = 'imagens/tecnica-po.png'
+    }else if(modalTitle.innerHTML == 'Luminol'){
+        modalimg.src = 'imagens/luminol.png'
+    }else if(modalTitle.innerHTML == 'Análise de DNA'){
+        modalimg.src = 'imagens/dna.png'
     }
+}
 
-    if(window.getComputedStyle(plus_3).display === 'none'){
-        plus_3.style.display = 'block'
-        btn_ver.innerHTML = 'Ver menos'
-    } else{
-        plus_3.style.display = 'none'
-        btn_ver.innerHTML = 'Ver mais'
-    }
+function fecharModal(){
+    document.getElementById('modal').classList.add('hidden');
 }

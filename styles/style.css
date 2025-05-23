@@ -24,7 +24,8 @@ html{
 
 body{
     background-color: #000;
-    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
 }
 
 /* ESTILO DO HEADER(MENU) */
@@ -94,7 +95,7 @@ section.experimentos{
 }
 
 section.experimentos img.fita-zebrada{
-    width: 100vw;
+    max-width: 100%;
 }
 
 section.experimentos .interface h1{
@@ -120,6 +121,7 @@ section.experimentos .interface .content .cards{
     display: flex;
     gap: 35px;
     margin: 35px 0;
+    max-width: 100%;
 }
 
 section.experimentos .interface .content .cards .card{
@@ -129,9 +131,64 @@ section.experimentos .interface .content .cards .card{
     text-align: center;
 }
 
-section.experimentos .interface .content .cards .card p{
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: var(--amarelo);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-content img{
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.modal-content h1{
+    margin-bottom: 10px;
+    font-family: var(--font-titulo);
+}
+
+.close-button {
+    width: 80%;
+    padding: 4px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    font-family: var(--font-titulo);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.close-button:hover{
+    border-radius: 2px;
+    box-shadow: var(--sombra);
+}
+
+.hidden {
     display: none;
 }
+
 
 section.experimentos .interface .content .cards .card img{
     width: 250px;
@@ -155,3 +212,38 @@ section.experimentos .interface .content .cards .card button:hover{
 }
 
 /* ESTILO DO FOOTER(RODAPÉ) */
+
+footer .interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .interface img{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+footer .interface hr{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+footer .interface p.direitos{
+    margin-bottom: 7px;
+}
+
+footer .interface p a{
+    color: #fff;
+    text-decoration: none;
+    transition: .8s;
+}
+
+footer .interface p a:hover{
+    text-decoration: underline;
+    color: var(--amarelo);
+}

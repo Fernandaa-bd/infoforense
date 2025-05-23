@@ -11,5 +11,34 @@
 
 /* RESPONSIVO DO EXPERIMENTOS */
 
+section.experimentos .interface .content p{
+    font-size: 18px;
+}
+
+section.experimentos .interface .content .cards{
+    flex-direction: column;
+}
+
+.modal-content {
+    padding: 15px 20px;
+}
+
+.modal-content img{
+    max-width: 270px;
+}
+
+.close-button {
+    width: 100%;
+}
+
 /* RESPONSIVO DO FOOTER(RODAPÉ) */
+
+footer .interface{
+    padding: 20px;
+}
+
+footer .interface p{
+    text-align: center;
+}
+
 }

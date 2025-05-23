@@ -82,28 +82,19 @@
                         <div class="card">
                             <img src="imagens/tecnica-po.png" alt="">
                             <h1>Técnica do Pó</h1>
-                            <p class="p-plus" id="plus_1">
-                                A técnica do pó, utilizada em perícia forense para revelar impressões digitais, consiste em aplicar pó (geralmente preto) sobre superfícies lisas para tornar as impressões visíveis. As partículas do pó aderem à água e a compostos oleosos da impressão, criando contraste com a superfície. Após a aplicação, as impressões são fotografadas e, se necessário, podem ser retiradas com fita adesiva. 
-                            </p>
-                            <button id="ver_mais" onclick="VerMais()">Ver mais</button>
+                            <button id="ver_mais" onclick="VerMais('Técnica do Pó', 'A técnica do pó, utilizada em perícia forense para revelar impressões digitais, consiste em aplicar pó (geralmente preto) sobre superfícies lisas para tornar as impressões visíveis. As partículas do pó aderem à água e a compostos oleosos da impressão, criando contraste com a superfície. Após a aplicação, as impressões são fotografadas e, se necessário, podem ser retiradas com fita adesiva. ')">Ver mais</button>
                         </div>
 
                         <div class="card">
                             <img src="imagens/luminol.png" alt="">
                             <h1>Luminol</h1>
-                            <p class="p-plus" id="plus_2">
-                                O luminol é um reagente quimioluminescente amplamente utilizado em perícias forenses para detectar vestígios de sangue, mesmo em superfícies onde o sangue foi limpo ou não é visível a olho nu. Ele reage com o ferro presente na hemoglobina do sangue, emitindo luz e revelando a presença de sangue. 
-                            </p>
-                            <button id="ver_mais" onclick="VerMais()">Ver mais</button>
+                            <button id="ver_mais" onclick="VerMais('Luminol', 'O luminol é um reagente quimioluminescente amplamente utilizado em perícias forenses para detectar vestígios de sangue, mesmo em superfícies onde o sangue foi limpo ou não é visível a olho nu. Ele reage com o ferro presente na hemoglobina do sangue, emitindo luz e revelando a presença de sangue. ')">Ver mais</button>
                         </div>
 
                         <div class="card">
                             <img src="imagens/dna.png" alt="">
                             <h1>Análise de DNA</h1>
-                            <p class="p-plus" id="plus_3">
-                                O DNA é uma ferramenta crucial na perícia forense, utilizada para identificar indivíduos, estabelecer conexões entre suspeitos e locais de crime, e até mesmo identificar restos mortais. A análise de DNA permite identificar o material genético em vestígios como sangue, cabelos, saliva e tecidos, auxiliando na resolução de crimes. 
-                            </p>
-                            <button id="ver_mais" onclick="VerMais()">Ver mais</button>
+                            <button id="ver_mais" onclick="VerMais('Análise de DNA','O DNA é uma ferramenta crucial na perícia forense, utilizada para identificar indivíduos, estabelecer conexões entre suspeitos e locais de crime, e até mesmo identificar restos mortais. A análise de DNA permite identificar o material genético em vestígios como sangue, cabelos, saliva e tecidos, auxiliando na resolução de crimes.')">Ver mais</button>
                         </div>
                     </div>
                 </div>
@@ -114,9 +105,21 @@
 
     <footer class="rodape"><!-- fernanda -->
         <div class="interface">
-
+            <img src="imagens/logo-branca.png" alt="">
+            <hr>
+            <p class="direitos">InfoForense 2025 © Todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="https://github.com/Fernandaa-bd">Maria Fernanda</a>, <a href="https://github.com/HagataLS">Hágata Larissa</a> e <a href="">Glycia Inoue</a>.</p>
         </div>
     </footer>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <img src="" alt="" id="modal-img">
+            <h1 id="modal-title">Título</h1>
+            <p id="modal-text">Texto explicativo do experimento...</p>
+            <button class="close-button" onclick="fecharModal()">Ver menos</button>
+        </div>
+    </div>
     
 </body>
 </html>
