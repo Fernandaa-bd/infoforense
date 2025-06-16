@@ -28,6 +28,11 @@ body{
     height: 100vh;
 }
 
+img.fita-zebrada{
+    width: 98.93vw;
+    margin-bottom: 10px;
+}
+
 /* ESTILO DO HEADER(MENU) */
 header .interface{
     padding-top: 15px;
@@ -104,18 +109,13 @@ section.inicio .interface .txt p{
 /* ESTILO DO CIÊNCIA FORENSE */
 section.c-forense{
     background-color: #fff;
-    padding: 30px 0 1px 0;
+    padding: 0 0 1px 0;
 }
 
 section.c-forense h1{
     font-family: var(--font-titulo);
     font-size: 30px;
     text-align: center;
-    margin-bottom: 10px;
-}
-
-section.c-forense img.zebrada{
-    width: 98.93vw;
 }
 
 section.c-forense .interface{
@@ -126,6 +126,28 @@ section.c-forense .interface{
 
 section.c-forense .interface .txt-c-forense{
     width: 70%;
+}
+
+section.c-forense .interface .txt-c-forense h1{
+    background-color: var(--amarelo);
+    width: 20%;
+    font-family: 'Montserrat';
+    font-size: 23px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+section.c-forense .interface .txt-c-forense .txt-bottom{
+    display: flex;
+    align-items: center;
+}
+
+section.c-forense .interface .txt-c-forense .txt-bottom .txt-bottom-box h1{
+    width: 40%;
+}
+
+section.c-forense .interface .txt-c-forense .txt-bottom .txt-bottom-box h1.area{
+    width: 90%;
 }
 
 section.c-forense .interface .txt-c-forense p{
@@ -143,6 +165,7 @@ section.c-forense .interface .img-c-forense{
 section.c-forense .interface .img-c-forense img{
     width: 250px;
     margin-bottom: 10px;
+    border: 15px solid var(--amarelo);
 }
 
 section.c-forense .interface .img-c-forense p{
@@ -165,19 +188,47 @@ section.sobre .titulo h1{
     margin-bottom: 10px;
 }
 
-section.sobre img{
-    width: 98.93vw;
+/* ESTILO DO PROJETOS */
+
+section.projetos{
+    background-color: #fff;
 }
 
-/* ESTILO DO PROJETOS */
+section.projetos h1{
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section.projetos .interface{
+    display: flex;
+    align-items: center;
+}
+
+section.projetos .interface .txt-projetos{
+    width: 60%;
+}
+
+section.projetos .interface .txt-projetos p{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section.projetos .interface .img-projetos{
+    w740%
+    display: flex;
+    align-items: end;
+}
+
+section.projetos .interface .img-projetos img{
+    width: 250px;
+}
 
 /* ESTILO DO EXPERIMENTOS */
 section.experimentos{
     background-color: #fff;
-}
-
-section.experimentos img.fita-zebrada{
-    max-width: 100%;
 }
 
 section.experimentos .interface h1{
