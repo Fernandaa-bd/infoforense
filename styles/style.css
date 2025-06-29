@@ -199,25 +199,94 @@ section.projetos img{
     width: 98.93vw;
 }
 
-
-section.projetos .interface{
-    align-items: center;
-    margin: 20px 0;
-}
-
-
-section.projetos .interface h1{
+section.projetos h1{
     margin: 10px 0;
     text-align: center;
     font-size: 30px;
     font-family: var(--font-titulo);
 }
 
+section.projetos .interface{
+    align-items: center;
+    margin: 20px 0;
+    display: flex;
+}
 
-section.projetos .interface p{
-    width: 50%;
+section.projetos .interface .txt-projetos p{
+    width: 70%;
     text-align: left;
+    font-size: 23px;
     font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section.projetos .interface .img-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+section.projetos .interface .img-projetos img{
+    width: 300px;
+    margin-bottom: 10px;
+    border: 15px solid var(--amarelo);
+}
+
+/* ESTILO DA CULMINÂNCIA */
+section.culminancia{
+    background-color: #fff;
+    padding-bottom: 2px;
+}
+
+section.culminancia h1{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-titulo);
+}
+
+section.culminancia .interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.culminancia .txt-culminancia {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section.culminancia .txt-culminancia p{
+    font-size: 20px;
+}
+
+section.culminancia .img-culminancia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+section.culminancia .img-culminancia img{
+    width: 400px;
+    border: 15px solid var(--amarelo);
+}
+
+section.culminancia .interface button{
+    background-color: #000;
+    padding: 5px 0;
+    width: 10%;
+}
+
+section.culminancia .interface button a{
+    color: var(--amarelo);
+    font-family: var(--font-titulo);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 /* ESTILO DO EXPERIMENTOS */
