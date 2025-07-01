@@ -174,20 +174,6 @@ section.c-forense .interface .img-c-forense p{
     font-weight: 600;
 }
 
-/* ESTILO DO SOBRE */
-
-section.sobre{
-    background-color: #fff; 
-    padding: 30px 0;
-}
-
-section.sobre .titulo h1{
-    text-align: center;
-    font-family: var(--font-titulo);
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
 /* ESTILO DO PROJETOS */
 section.projetos{
     background-color: #fff;
@@ -279,6 +265,15 @@ section.culminancia .interface button{
     background-color: #000;
     padding: 5px 0;
     width: 10%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+section.culminancia .interface button:hover{
+    background-color: var(--amarelo);
+    cursor: pointer;
 }
 
 section.culminancia .interface button a{
@@ -289,38 +284,56 @@ section.culminancia .interface button a{
     font-weight: 300;
 }
 
-/* ESTILO DO EXPERIMENTOS */
-section.experimentos{
+section.culminancia .interface button a:hover{
+    color: #000;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    background-color: #fff; 
+    padding: 30px 0;
+}
+
+section.sobre .titulo h1{
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* ESTILO DO MÉTODOS */
+section.metodos{
     background-color: #fff;
 }
 
-section.experimentos .interface h1{
+section.metodos .interface h1{
     font-family: var(--font-titulo);
     text-align: center;
     margin: 10px 0;
     font-size: 30px;
 }
 
-section.experimentos .interface .content{
+section.metodos .interface .content{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.experimentos .interface .content p{
+section.metodos .interface .content p{
     margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
 }
 
-section.experimentos .interface .content .cards{
+section.metodos .interface .content .cards{
     display: flex;
     gap: 35px;
     margin: 35px 0;
     max-width: 100%;
 }
 
-section.experimentos .interface .content .cards .card{
+section.metodos .interface .content .cards .card{
     background-color: var(--amarelo);
     border-radius: 20px;
     padding: 20px;
@@ -386,11 +399,11 @@ section.experimentos .interface .content .cards .card{
 }
 
 
-section.experimentos .interface .content .cards .card img{
+section.metodos .interface .content .cards .card img{
     width: 250px;
 }
 
-section.experimentos .interface .content .cards .card button{
+section.metodos .interface .content .cards .card button{
     height: 35px;
     width: 100%;
     border-radius: 10px;
@@ -402,7 +415,7 @@ section.experimentos .interface .content .cards .card button{
     transition: .5s;
 }
 
-section.experimentos .interface .content .cards .card button:hover{
+section.metodos .interface .content .cards .card button:hover{
     border-radius: 2px;
     box-shadow: var(--sombra);
 }
