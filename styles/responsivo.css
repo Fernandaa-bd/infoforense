@@ -9,13 +9,13 @@
 
 /* RESPONSIVO DO CIÊNCIA FORENSE */
 
-/* RESPONSIVO DO EXPERIMENTOS */
+/* RESPONSIVO DOS MÉTODOS */
 
-section.experimentos .interface .content p{
+section.metodos .interface .content p{
     font-size: 18px;
 }
 
-section.experimentos .interface .content .cards{
+section.metodos .interface .content .cards{
     flex-direction: column;
 }
 
