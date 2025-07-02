@@ -4,7 +4,6 @@ header .interface nav{
     display: none;
 }
 
-
 /* MENU MOBILE */
 .btn-open-menu{
     display: block;
@@ -48,14 +47,14 @@ header .interface nav{
 .menu-mobile nav ul{
     text-align: right;
     list-style-type: none;
-}
+}   
 
 .menu-mobile nav ul li a{
     text-decoration: none;
     color: #fff;
     font-weight: 300;
     font-size: 20px;
-    padding: 2.5rem;
+    padding: 25px;
     display: block;
     transition: .5s;
 }
