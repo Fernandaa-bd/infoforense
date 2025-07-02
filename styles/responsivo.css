@@ -1,13 +1,123 @@
 @media screen and (max-width:700px){
 /* RESPONSIVO DO HEADER(MENU) */
-
+header .interface nav{
+    display: none;
+}
 /* RESPONSIVO DO INÍCIO */
+
+section.inicio .interface{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90vh;
+}
+
+section.inicio .interface .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.inicio .interface .img img{
+    width: 350px;
+    margin-top: 50px;
+}
+
+section.inicio .interface .txt{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+} 
+
+section.inicio .interface .txt h1{
+    font-size: 25px;
+}
+
+section.inicio .interface .txt p{
+    font-size: 15px;
+    width: 90%;
+    margin-top: 10px;
+}
 
 /* RESPONSIVO DO SOBRE */
 
 /* RESPONSIVO DO PROJETOS */
+section.projetos .interface{
+    display: flex;
+    flex-direction: column;
+}
 
+section.projetos .interface .txt-projetos p{
+    width: 100%;
+    text-align: justify;
+}
 /* RESPONSIVO DO CIÊNCIA FORENSE */
+
+section.c-forense h1{
+    font-size: 30px;
+}
+
+section.c-forense .interface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+section.c-forense .interface .txt-c-forense{
+    width: 100%;
+}
+
+section.c-forense .interface .txt-c-forense h1{
+    width: 100%;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+section.c-forense .interface .txt-c-forense .txt-bottom{
+    flex-direction: column;
+}
+
+section.c-forense .interface .txt-c-forense .txt-bottom .txt-bottom-box h1{
+    width: 100%;
+}
+
+section.c-forense .interface .txt-c-forense .txt-bottom .txt-bottom-box h1.area{
+    width: 100%;
+}
+
+section.c-forense .interface .img-c-forense{
+    align-items: center;
+}
+
+section.c-forense .interface .img-c-forense p{
+    width: 80%;
+    text-align: center;
+}
+
+/* RESPONSIVO DA CULMINÂNCIA */
+section.culminancia .interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.culminancia .txt-culminancia {
+    width: 90%;
+}
+
+section.culminancia .img-culminancia{
+    flex-direction: column;
+}
+
+section.culminancia .img-culminancia img{
+    width: 350px;
+}
+
+section.culminancia .interface button{
+    width: 30%;
+}
 
 /* RESPONSIVO DOS MÉTODOS */
 

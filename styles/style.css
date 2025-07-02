@@ -274,6 +274,7 @@ section.culminancia .interface button{
 section.culminancia .interface button:hover{
     background-color: var(--amarelo);
     cursor: pointer;
+    color: #000;
 }
 
 section.culminancia .interface button a{
