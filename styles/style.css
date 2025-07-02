@@ -70,6 +70,19 @@ header .interface nav ul a:hover{
     transform: scale(1.05);
 }
 
+/* MENU MOBILE */
+.menu-mobile{
+    display: none;
+}
+
+.btn-open-menu{
+    display: none;
+}
+
+.overlay-menu{
+    display: none;
+}
+
 /* ESTILO DO INÍCIO */
 
 section.inicio .interface{
