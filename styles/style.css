@@ -85,12 +85,12 @@ header .interface nav ul a:hover{
 
 /* ESTILO DO DROPDOWN */
 .dropdonw-main{
-    
+    position: relative;
 }
 
 .dropdonw{
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .dropdonw i{
@@ -99,10 +99,17 @@ header .interface nav ul a:hover{
 }
 
 .dropdonw-main .dropdonw-links{
-    display: none;
-    position: relative;
+    position: absolute;
+    display: none; 
     background-color: #181818;
     padding: 5px;
+    width: 115px;
+    height: 60px;
+    text-align: left;
+}
+
+.dropdonw-main .dropdonw-links a li:hover{
+    background-color: #202020;
 }
 
 .dropdonw-main .dropdonw-links a li.first{
@@ -116,7 +123,6 @@ header .interface nav ul a:hover{
 
 .dropdonw-main.drop .dropdonw-links{
     display: block;
-    position: relative;
 }
 
 .dropdonw-main.drop .dropdonw i{
@@ -269,6 +275,16 @@ section.projetos .interface .img-projetos img{
     width: 300px;
     margin-bottom: 10px;
     border: 15px solid var(--amarelo);
+}
+
+/* ESTILO DAS ATIVIDADES */
+section.atividades{
+    background-color: #fff;
+}
+
+section.atividades .interface h1{
+    font-family: var(--font-titulo);
+    text-align: center;
 }
 
 /* ESTILO DA CULMINÂNCIA */
