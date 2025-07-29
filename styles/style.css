@@ -83,6 +83,46 @@ header .interface nav ul a:hover{
     display: none;
 }
 
+/* ESTILO DO DROPDOWN */
+.dropdonw-main{
+    
+}
+
+.dropdonw{
+    display: flex;
+    gap: 5px;
+}
+
+.dropdonw i{
+    color: #fff;
+    transition: .5s;
+}
+
+.dropdonw-main .dropdonw-links{
+    display: none;
+    position: relative;
+    background-color: #181818;
+    padding: 5px;
+}
+
+.dropdonw-main .dropdonw-links a li.first{
+    margin-bottom: 10px;
+}
+
+.dropdonw-main .dropdonw-links hr{
+    height: 1px;
+    width: 100%;
+}
+
+.dropdonw-main.drop .dropdonw-links{
+    display: block;
+    position: relative;
+}
+
+.dropdonw-main.drop .dropdonw i{
+    transform: rotate(180deg);
+}
+
 /* ESTILO DO INÍCIO */
 
 section.inicio .interface{
@@ -272,34 +312,6 @@ section.culminancia .img-culminancia{
 section.culminancia .img-culminancia img{
     width: 400px;
     border: 15px solid var(--amarelo);
-}
-
-section.culminancia .interface button{
-    background-color: #000;
-    padding: 5px 0;
-    width: 10%;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    transition: .5s;
-}
-
-section.culminancia .interface button:hover{
-    background-color: var(--amarelo);
-    cursor: pointer;
-    color: #000;
-}
-
-section.culminancia .interface button a{
-    color: var(--amarelo);
-    font-family: var(--font-titulo);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-section.culminancia .interface button a:hover{
-    color: #000;
 }
 
 /* ESTILO DO SOBRE */
