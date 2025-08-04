@@ -332,9 +332,50 @@ section.atividades .interface button.btn-activity{
 }
 
 section.atividades .interface button.btn-activity:hover{
-    border: 1px solid var(--amarelo);
-    background-color: transparent;
-    color: var(--amarelo);
+    transform: scale(1.05);
+}
+
+section.atividades .interface button.btn-activity a{
+    text-decoration: none;
+    color: #000;
+    font-family: var(--font-titulo);
+}
+
+section.atividades .interface button.btn-activity:hover
+
+/* ESTILO ATIVIDADES CONTAINER */
+section.atividades-container{
+    background-color: #fff;
+}
+
+section.atividades-container .interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 40px 0;
+}
+
+section.atividades-container .interface h1{
+    text-align: center;
+    font-family: var(--font-titulo);
+    margin-bottom: 15px;
+}
+
+section.atividades-container .interface p{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 80%;
+    font-size: 18px;
+}
+
+section.atividades-container .interface img{
+    width: 700px;
+}
+
+section.atividades-container .interface img.img-atividades-menor{
+    width: 400px;
 }
 
 /* ESTILO DA CULMINÂNCIA */
@@ -364,7 +405,8 @@ section.culminancia .txt-culminancia {
 }
 
 section.culminancia .txt-culminancia p{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 section.culminancia .img-culminancia{
@@ -376,8 +418,7 @@ section.culminancia .img-culminancia{
 }
 
 section.culminancia .img-culminancia img{
-    width: 400px;
-    border: 15px solid var(--amarelo);
+    width: 700px;
 }
 
 /* ESTILO DO SOBRE */
@@ -416,6 +457,7 @@ section.metodos .interface .content p{
     margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
+    font-weight: 500;
 }
 
 section.metodos .interface .content .cards{
@@ -532,10 +574,6 @@ footer .interface hr{
     width: 100%;
     height: 1px;
     margin-bottom: 10px;
-}
-
-footer .interface p.direitos{
-    margin-bottom: 7px;
 }
 
 footer .interface p a{
