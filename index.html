@@ -20,35 +20,43 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- bootstrap icons -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <!-- favicon -->
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="interface">
-            <img src="imagens/logo-branca.png" alt="">
+            <img src="imagens/logo-branca.png" alt="InfoForense" class="logo_branca">
+            <img src="imagens/logo-preta.png" class="logo_preta" alt="InfoForense">
             <nav class="menu-desktop">
                 <ul>
                     <a href="#c-forense">
                         <li> CIÊNCIA FORENSE </li>
                     </a>
-                    <a href="#sobre">
-                        <li> SOBRE </li>
-                    </a>
                     <a href="#">
                         <div class="dropdonw-main" id="dropdonw-main">
                             <div class="dropdonw">
-                                <li>PROJETOS</li>
+                                <a href="#projetos">
+                                    <li>PROJETO</li>
+                                </a>
                                 <i class="bi bi-chevron-down" id="btn-drop"></i>
                             </div>
                             <div class="dropdonw-links" id="dropdonw-links">
-                                    <a href="#"><li class="first">Atividades</li></a>
+                                    <a href="#atividades"><li class="first">Atividades</li></a>
                                     <a href="#culminancia"><li>Culminância</li></a>
                             </div>
                         </div>
                     </a>
                     <a href="#metodos">
                         <li> MÉTODOS </li>
+                    </a>
+
+                    <a href="#sobre">
+                        <li> SOBRE </li>
                     </a>
                 </ul>
             </nav>
@@ -65,10 +73,11 @@
                 <nav>
                     <ul>
                         <li><a href="#c-forense">Ciência Forense</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#projetos">Projeto</a></li>
+                        <li><a href="#atividades">Atividades</a></li>
                         <li><a href="#culminancia">Culminância</a></li>
                         <li><a href="#metodos">Métodos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
                     </ul>
                 </nav>
             </div>
@@ -84,7 +93,7 @@
         <section class="inicio">
             <div class="interface">
                 <div class="img">
-                    <img src="imagens/detetive.png" alt="">
+                    <img src="imagens/detetive.png" alt="detetive com lanterna">
                 </div>
                 <div class="txt">
                     <h1> SEJAM BEM-VINDOS AO SITE! </h1>
@@ -95,7 +104,7 @@
 
         <section class="c-forense" id="c-forense">
 
-            <img src="imagens/fita-zebrada.png" alt="" class="fita-zebrada">
+            <img src="imagens/fita-zebrada.png" alt="fita zebrada" class="fita-zebrada">
             <h1>CIÊNCIA FORENSE</h1>
             <div class="interface">
 
@@ -119,34 +128,28 @@
                 </div>
 
                 <div class="img-c-forense">
-                    <img src="imagens/luminol-2.png" alt="">
+                    <img src="imagens/luminol-2.png" alt="Simulação do luminol">
                     <p>(Simulação da aplicação do luminol para evidenciar vestígios que tentaram ser apagados)</p>
                 </div>
             </div>
         </section>
 
         <section class="projetos" id="projetos">
-            <img src="imagens/fita-zebrada.png" alt="">
-            <h1> PROJETOS </h1>
+            <img src="imagens/fita-zebrada.png" alt="fita zebrada">
+            <h1> PROJETO - LITERASCIENCE </h1>
             <div class="interface">
                 <div class="txt-projetos">
-                    <p> No ano de 2023, a Escola Estadual Professora Calpúrnia Caldas de Amorim (EECCAM), promoveu um
-                        projeto de Ciência Forense para a turma de 1° Ano Técnico, onde ocorreram palestras com peritos
-                        criminais, oficinas de Química, Física e Biologia, todas colaborando para o conhecimento do
-                        aluno e a entrega do resultado final do projeto. </p>
-                    <p> A elaboração do projeto foi baseada na junção do laboratório de Biologia com a biblioteca da
-                        instituição, onde os alunos selecionaram livros de casos criminais e reconstruíram a história
-                        com base nos métodos de técnicas de resolução atuais.
-                    </p>
+                    <p> O projeto Litera Science foi desenvolvido em 2023 pelos alunos da turma do 1° Ano Técnico da Escola Estadual Professora Calpúrnia Caldas de Amorim(EECCAM). Ao longo do ano, foi realizada diversas atividades práticas, como simulações de cenas de crime, oficinas com peritos, aulas de Biologia, Química e Física com foco forense, além da participação em eventos como a Feira de Ciências. </p>
+                    <p> A culminância do projeto foi realizada no final do ano, com cada grupo apresentando uma cena de crime inspirada em um livro de suspense clássico. A elaboração do projeto foi baseada na junção do laboratório de Biologia com a biblioteca da instituição, onde os alunos selecionaram livros de casos criminais e reconstruíram as histórias utilizando métodos modernos da perícia. As cenas foram encenadas e resolvidas com técnicas atuais de investigação, e o momento também contou com uma confraternização entre alunos e professores.</p>
                 </div>
 
                 <div class="img-projetos">
-                    <img src="imagens/projetos.png" alt="">
+                    <img src="imagens/projetos.png" alt="projetos">
                 </div>
             </div>
         </section>
 
-        <section class="atividades">
+        <section class="atividades" id="atividades">
             <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="fita-zebrada">
             <div class="interface">
                 <h1 class="principal">ATIVIDADES</h1>
@@ -156,8 +159,8 @@
                         <button class="btn-activity"><a href="#aulas-praticas">Ver mais</a></button>
                     </div>
                     <div class="box-activity">
-                        <h1>FEIRA DE CIÊNCIAS</h1>
-                        <button class="btn-activity"><a href="#feira-de-ciencias">Ver mais</a></button>
+                        <h1>OFICINAS COM PERITOS</h1>
+                        <button class="btn-activity"><a href="#oficinas-com-peritos">Ver mais</a></button>
                     </div>
                 </div>
 
@@ -170,8 +173,8 @@
 
                 <div class="bottom-activity">
                     <div class="box-activity">
-                        <h1>OFICINAS COM PERITOS</h1>
-                        <button class="btn-activity"><a href="#oficinas-com-peritos">Ver mais</a></button>
+                        <h1>FEIRA DE CIÊNCIAS</h1>
+                        <button class="btn-activity"><a href="#feira-de-ciencias">Ver mais</a></button>
                     </div>
                     <div class="box-activity">
                         <h1>EXPOTEC</h1>
@@ -182,7 +185,7 @@
         </section>
 
         <section class="atividades-container" id="aulas-praticas">
-            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="">
+            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="fita-zebrada">
             <div class="interface">
                 <h1>AULAS PRÁTICAS</h1>
                 <p>As disciplinas de Biologia, Química e Física foram integradas ao projeto de forma prática. Foram feitas atividades como identificação de tipo sanguíneo, análise de pegadas, testes com reagentes químicos, reconstrução de trajetórias e mais. Tudo voltado para a aplicação na investigação forense.</p>
@@ -191,25 +194,25 @@
         </section>
 
         <section class="atividades-container" id="oficinas-com-peritos">
-            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="">
+            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="fita-zebrada">
             <div class="interface">
                 <h1>OFICINAS COM PERITOS</h1>
                 <p>Na escola, ocorreu a visita de peritos criminais que atuam profissionalmente na área. Eles trouxeram suas maletas, mostraram equipamentos de análise de vestígios, explicaram sobre a chegada numa cena de crime, coleta de provas e as principais etapas de uma investigação. Os alunos puderam fazer perguntas e até testar alguns dos materiais. Foi uma troca de experiências super enriquecedora.</p>
-                <img src="imagens/aulas_praticas.png" alt="aulas-praticas">
+                <img src="imagens/perito.png" alt="aulas-praticas" class="perito">
             </div>
         </section>
 
         <section class="atividades-container" id="simulacao">
-            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="">
+            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="fita-zebrada">
             <div class="interface">
                 <h1>SIMULAÇÃO</h1>
                 <p>Foram realizadas simulações completas de cenas de crime, onde os alunos assumiram papéis como investigadores, peritos e até “suspeitos”. Foi criado um cenário com pistas falsas e verdadeiras, e o desafio era coletar as provas corretas, analisá-las e montar hipóteses. A atividade uniu lógica, criatividade, trabalho em grupo e muita atenção aos detalhes. Foi uma das partes mais empolgantes do projeto.</p>
-                <img src="imagens/simulacao.png" alt="simulacao">
+                <img src="imagens/simulacao.png" alt="simulacao de cena de crime">
             </div>
         </section>
 
         <section class="atividades-container" id="feira-de-ciencias">
-            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="">
+            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="fita-zebrada">
             <div class="interface">
                 <h1>FEIRA DE CIÊNCIAS</h1>
                 <p>Durante a Feira de Ciências, foi apresentado o projeto Litera Science para alunos de outras escolas. Várias estandes foram montadas com explicações sobre a perícia criminal, ocorreu a apresentação dos experimentos e foi mostrado como funciona uma cena de crime. Foi um momento de troca, aprendizado e muita interação.</p>
@@ -218,16 +221,16 @@
         </section>
 
         <section class="atividades-container" id="expotec">
-            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="">
+            <img src="imagens/fita-zebrada.png" class="fita-zebrada" alt="fita-zebrada">
             <div class="interface">
                 <h1>EXPOTEC</h1>
                 <p>O projeto foi exposto na Expotec por dois dias seguidos, com estandes interativos, atividades práticas, explicações sobre o trabalho da perícia e demonstrações de experimentos. Foi uma experiência incrível, onde vários visitantes interagiram e mostrado o quanto a ciência pode ser acessível e interessante.</p>
-                <img src="imagens/litera.png" alt="feira-de-ciencias" class="img-atividades-menor">
+                <img src="imagens/expotec.png" alt="feira-de-ciencias expotec IFRN" >
             </div>
         </section>
 
         <section class="culminancia" id="culminancia">
-            <img src="imagens/fita-zebrada.png" alt="" class="fita-zebrada">
+            <img src="imagens/fita-zebrada.png" alt="fita-zebrada" class="fita-zebrada">
             <h1>CULMINÂNCIA</h1>
             <div class="interface">
                 <div class="txt-culminancia">
@@ -235,13 +238,13 @@
                 </div>
 
                 <div class="img-culminancia">
-                    <img src="imagens/culminancia.png" alt="">
+                    <img src="imagens/culminancia.png" alt="culminância do projeto">
                 </div>
             </div>
         </section>
 
-        <section class="metodos" id="metodos"><!-- fernanda -->
-            <img src="imagens/fita-zebrada.png" alt="" class="fita-zebrada">
+        <section class="metodos" id="metodos">
+            <img src="imagens/fita-zebrada.png" alt="fita-zebrada" class="fita-zebrada">
             <div class="interface">
                 <h1>MÉTODOS</h1>
 
@@ -252,7 +255,7 @@
 
                     <div class="cards">
                         <div class="card">
-                            <img src="imagens/tecnica-po.png" alt="">
+                            <img src="imagens/tecnica-po.png" alt="técnica do pó para encontrar digitais">
                             <h1>Técnica do Pó</h1>
                             <button id="ver_mais"
                                 onclick="VerMais('Técnica do Pó', 'A técnica do pó, utilizada em perícia forense para revelar impressões digitais, consiste em aplicar pó (geralmente preto) sobre superfícies lisas para tornar as impressões visíveis. As partículas do pó aderem à água e a compostos oleosos da impressão, criando contraste com a superfície. Após a aplicação, as impressões são fotografadas e, se necessário, podem ser retiradas com fita adesiva. ')">Ver
@@ -260,7 +263,7 @@
                         </div>
 
                         <div class="card">
-                            <img src="imagens/luminol.png" alt="">
+                            <img src="imagens/luminol.png" alt="luminol">
                             <h1>Luminol</h1>
                             <button id="ver_mais"
                                 onclick="VerMais('Luminol', 'O luminol é um reagente quimioluminescente amplamente utilizado em perícias forenses para detectar vestígios de sangue, mesmo em superfícies onde o sangue foi limpo ou não é visível a olho nu. Ele reage com o ferro presente na hemoglobina do sangue, emitindo luz e revelando a presença de sangue. ')">Ver
@@ -268,7 +271,7 @@
                         </div>
 
                         <div class="card">
-                            <img src="imagens/dna.png" alt="">
+                            <img src="imagens/dna.png" alt="amostras de sangue e dna">
                             <h1>Análise de DNA</h1>
                             <button id="ver_mais"
                                 onclick="VerMais('Análise de DNA','O DNA é uma ferramenta crucial na perícia forense, utilizada para identificar indivíduos, estabelecer conexões entre suspeitos e locais de crime, e até mesmo identificar restos mortais. A análise de DNA permite identificar o material genético em vestígios como sangue, cabelos, saliva e tecidos, auxiliando na resolução de crimes.')">Ver
@@ -279,22 +282,19 @@
             </div>
         </section>
 
-        <section class="sobre" id="sobre"><!-- hagata -->
-            <div class="titulo">
-                <img src="imagens/fita-zebrada.png" alt="" class="fita-zebrada">
-            </div>
+        <section class="sobre" id="sobre">
+            <img src="imagens/fita-zebrada.png" alt="fita-zebrada" class="fita-zebrada">
             <div class="interface">
-
+                <h1>SOBRE</h1>
                 <div class="conteudo">
-                    <div class="importancia">
+                    <div class="sobre-box">
                         <h1> IMPORTÂNCIA </h1>
-                        <p> Esse site foi criado como parte do projeto “Litera Science”, com intuito de aproximar os
-                            estudantes dessa área investigativa e científica de forma acessível, educativa e interativa.
+                        <p> Esse site foi criado como parte do projeto “Litera Science”, com intuito de aproximar os estudantes dessa área investigativa e científica de forma acessível, educativa e interativa.
                         </p>
                     </div>
 
-                    <div class="objetivo">
-                        <h1> OBJETIVO </h1>
+                    <div class="sobre-box">
+                        <h1>OBJETIVO</h1>
                         <p> Nosso objetivo é despertar o interesse dos alunos pela Ciência Forense, mostrando como ela
                             pode ser aplicada no dia a dia e como pode contribuir para o aprendizado de diversas áreas.
                         </p>
@@ -307,7 +307,7 @@
 
     <footer class="rodape"><!-- fernanda -->
         <div class="interface">
-            <img src="imagens/logo-branca.png" alt="">
+            <img src="imagens/logo-branca.png" alt="InfoForense">
             <hr>
             <p>Desenvolvido por <a href="https://github.com/Fernandaa-bd">Maria Fernanda</a>, <a
                     href="https://github.com/HagataLS">Hágata Larissa</a> e <a href="https://github.com/GlyciaInoue">Glycia Inoue</a>.</p>

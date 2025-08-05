@@ -53,7 +53,7 @@ header .interface nav{
 
 header .interface nav ul{
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 header .interface nav ul li{
@@ -96,6 +96,7 @@ header .interface nav ul a:hover{
 .dropdonw i{
     color: #fff;
     transition: .5s;
+    cursor: pointer;
 }
 
 .dropdonw-main .dropdonw-links{
@@ -116,11 +117,6 @@ header .interface nav ul a:hover{
     margin-bottom: 10px;
 }
 
-.dropdonw-main .dropdonw-links hr{
-    height: 1px;
-    width: 100%;
-}
-
 .dropdonw-main.drop .dropdonw-links{
     display: block;
 }
@@ -133,7 +129,7 @@ header .interface nav ul a:hover{
 
 section.inicio .interface{
     display: flex;
-    height: 70vh;
+    height: 80vh;
 }
 
 section.inicio .interface .img{
@@ -274,13 +270,16 @@ section.projetos .interface .img-projetos{
 section.projetos .interface .img-projetos img{
     width: 300px;
     margin-bottom: 10px;
-    border: 15px solid var(--amarelo);
 }
 
 /* ESTILO DAS ATIVIDADES */
 section.atividades{
     background-color: #fff;
     height: 550px;
+}
+
+section.atividades .interface{
+    max-width: 700px;
 }
 
 section.atividades .interface h1.principal{
@@ -341,8 +340,6 @@ section.atividades .interface button.btn-activity a{
     font-family: var(--font-titulo);
 }
 
-section.atividades .interface button.btn-activity:hover
-
 /* ESTILO ATIVIDADES CONTAINER */
 section.atividades-container{
     background-color: #fff;
@@ -360,6 +357,7 @@ section.atividades-container .interface h1{
     text-align: center;
     font-family: var(--font-titulo);
     margin-bottom: 15px;
+    font-size: 30px;
 }
 
 section.atividades-container .interface p{
@@ -376,6 +374,10 @@ section.atividades-container .interface img{
 
 section.atividades-container .interface img.img-atividades-menor{
     width: 400px;
+}
+
+section.atividades-container .interface img.perito{
+    width: 250px;
 }
 
 /* ESTILO DA CULMINÂNCIA */
@@ -419,20 +421,6 @@ section.culminancia .img-culminancia{
 
 section.culminancia .img-culminancia img{
     width: 700px;
-}
-
-/* ESTILO DO SOBRE */
-
-section.sobre{
-    background-color: #fff; 
-    padding: 30px 0;
-}
-
-section.sobre .titulo h1{
-    text-align: center;
-    font-family: var(--font-titulo);
-    font-size: 30px;
-    margin-bottom: 10px;
 }
 
 /* ESTILO DO MÉTODOS */
@@ -552,6 +540,50 @@ section.metodos .interface .content .cards .card button{
 section.metodos .interface .content .cards .card button:hover{
     border-radius: 2px;
     box-shadow: var(--sombra);
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    background-color: #fff; 
+    padding: 30px 0;
+}
+
+section.sobre .interface h1{
+    font-family: var(--font-titulo);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section.sobre .interface .conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+section.sobre .interface .conteudo .sobre-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sobre .interface .conteudo .sobre-box h1{
+    font-size: 25px;
+    background-color: var(--amarelo);
+    border: 10px solid #000;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+
+section.sobre .interface .conteudo .sobre-box p{
+    width: 350px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* ESTILO DO FOOTER(RODAPÉ) */
