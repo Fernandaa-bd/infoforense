@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    cursor: url('https://cdn-icons-png.flaticon.com/32/622/622669.png'), auto;
 }
 
 :root{
@@ -61,13 +62,46 @@ header .interface nav ul li{
     list-style-type: none;
 }
 
-header .interface nav ul a{
+header .interface nav ul li a{
     transition: .5s;
+    color: #fff;
     text-decoration: none;
+    display: block;
 }
 
-header .interface nav ul a:hover{
+header .interface nav ul li a:hover{
     transform: scale(1.05);
+}
+
+/* DROP */
+.drop-hover{
+    position: relative;
+}
+
+.drop-hover i{
+    color: #fff;
+}
+
+.drop-hover .drop{
+    position: absolute;
+    background-color: #181818;
+    padding: 0 5px;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.drop-hover .drop a{
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.drop-hover:hover .drop{
+    height: 60px;
+}
+
+.drop-hover:hover a > i{
+    transform: rotate(180deg);
 }
 
 /* MENU MOBILE */
@@ -81,48 +115,6 @@ header .interface nav ul a:hover{
 
 .overlay-menu{
     display: none;
-}
-
-/* ESTILO DO DROPDOWN */
-.dropdonw-main{
-    position: relative;
-}
-
-.dropdonw{
-    display: flex;
-    gap: 10px;
-}
-
-.dropdonw i{
-    color: #fff;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.dropdonw-main .dropdonw-links{
-    position: absolute;
-    display: none; 
-    background-color: #181818;
-    padding: 5px;
-    width: 115px;
-    height: 60px;
-    text-align: left;
-}
-
-.dropdonw-main .dropdonw-links a li:hover{
-    background-color: #202020;
-}
-
-.dropdonw-main .dropdonw-links a li.first{
-    margin-bottom: 10px;
-}
-
-.dropdonw-main.drop .dropdonw-links{
-    display: block;
-}
-
-.dropdonw-main.drop .dropdonw i{
-    transform: rotate(180deg);
 }
 
 /* ESTILO DO INÍCIO */
@@ -319,7 +311,6 @@ section.atividades .interface .box-activity h1{
 }
 
 section.atividades .interface button.btn-activity{
-    cursor: pointer;
     background-color: #FFEA00;
     color: #000;
     border: none;
@@ -507,7 +498,6 @@ section.metodos .interface .content .cards .card{
     border: none;
     font-size: 20px;
     font-family: var(--font-titulo);
-    cursor: pointer;
     transition: .5s;
 }
 
@@ -530,7 +520,6 @@ section.metodos .interface .content .cards .card button{
     width: 100%;
     border-radius: 10px;
     border: none;
-    cursor: pointer;
     font-family: var(--font-titulo);
     font-size: 20px;
     margin-top: 5px;

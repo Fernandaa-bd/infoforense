@@ -42,12 +42,3 @@ overlay_menu.addEventListener('click', ()=>{
 btn_close.addEventListener('click', ()=>{
     menu_mobile.classList.remove('open')
 })
-
-/* DROPDONW */
-let btn_drop = document.getElementById('btn-drop');
-let drop_main = document.getElementById('dropdonw-main');
-let drop_links = document.getElementById('dropdonw-links');
-
-btn_drop.addEventListener('click', ()=>{
-    drop_main.classList.toggle('drop');
-})
