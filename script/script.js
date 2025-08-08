@@ -13,7 +13,7 @@ function VerMais(titulo, texto){
     }else if(modalTitle.innerHTML == 'Luminol'){
         modalimg.src = 'imagens/luminol.png'
     }else if(modalTitle.innerHTML == 'Análise de DNA'){
-        modalimg.src = 'imagens/dna.png'
+        modalimg.src = 'imagens/dna.jpeg'
     }
 }
 
