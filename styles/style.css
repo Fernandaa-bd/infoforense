@@ -515,6 +515,11 @@ section.metodos .interface .content .cards .card img{
     width: 250px;
 }
 
+section.metodos .interface .content .cards .card img.dna{
+    border-radius: 15px;
+    height: 200px;
+}
+
 section.metodos .interface .content .cards .card button{
     height: 35px;
     width: 100%;
