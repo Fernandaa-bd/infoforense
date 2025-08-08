@@ -85,7 +85,7 @@ header .interface nav.menu-desktop{
 section.inicio .interface{
     display: flex;
     flex-direction: column-reverse;
-    height: 90vh;
+    height: 80vh;
 }
 
 section.inicio .interface .img{
