@@ -580,6 +580,66 @@ section.sobre .interface .conteudo .sobre-box p{
     font-weight: 500;
 }
 
+/* ESTILO DO GAME */
+section.game{
+    background-color: #fff;
+}
+
+section.game .interface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+section.game .interface .container{
+    background-image: url(/imagens/game.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-radius: 20px;
+    backdrop-filter: brightness(0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+section.game .interface .container h1{
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    font-size: 35px;
+}
+
+section.game .interface .container p{
+    width: 70%;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+section.game .interface .container button.btn-game{
+    background-color: var(--amarelo);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+section.game .interface .container button.btn-game:hover{
+    transform: scale(1.05);
+}
+
+section.game .interface .container button.btn-game a{
+    text-decoration: none;
+    color: #000;
+}
+
 /* ESTILO DO FOOTER(RODAPÉ) */
 
 footer .interface{
@@ -600,6 +660,10 @@ footer .interface hr{
     width: 100%;
     height: 1px;
     margin-bottom: 10px;
+}
+
+footer .interface p{
+    font-size: 14px;
 }
 
 footer .interface p a{
