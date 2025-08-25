@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    cursor: url('https://cdn-icons-png.flaticon.com/32/622/622669.png'), auto;
+    cursor: url(/imagens/lupa.svg), auto;
 }
 
 :root{
