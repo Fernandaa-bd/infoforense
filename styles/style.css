@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    cursor: url(/imagens/lupa.svg), auto;
+    cursor: url('/imagens/lupa.svg'), auto;
 }
 
 :root{
