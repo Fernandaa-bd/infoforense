@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    cursor: url('/imagens/lupa.svg'), auto;
 }
 
 :root{
@@ -32,6 +31,10 @@ body{
 img.fita-zebrada{
     width: 98.93vw;
     margin-bottom: 10px;
+}
+
+button{
+    cursor: pointer;
 }
 
 /* ESTILO DO HEADER(MENU) */
