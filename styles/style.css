@@ -596,7 +596,7 @@ section.game .interface{
 }
 
 section.game .interface .container{
-    background-image: url("../imagens/game.png");
+    background-image: url("./imagens/game.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
