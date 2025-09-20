@@ -270,7 +270,7 @@ section.projetos .interface .img-projetos img{
 /* ESTILO DAS ATIVIDADES */
 section.atividades{
     background-color: #fff;
-    height: 550px;
+    height: 600px;
 }
 
 section.atividades .interface{
@@ -311,6 +311,7 @@ section.atividades .interface .box-activity h1{
     margin-bottom: 10px;
     font-family: var(--font-titulo);
     text-align: center;
+    font-size: 25px;
 }
 
 section.atividades .interface button.btn-activity{
